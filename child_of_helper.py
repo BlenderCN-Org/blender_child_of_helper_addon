@@ -22,9 +22,9 @@ class ChildOfHelperOperator(bpy.types.Operator):
         pose_bone = object.pose.bones[bone_name]
 
         frame_current = context.scene.frame_current
-        bpy.context.scene.frame_set(frame_current - 1)
+        context.scene.frame_set(frame_current - 1)
         preview_matrix = pose_bone.matrix.copy()
-        bpy.context.scene.frame_set(frame_current)
+        context.scene.frame_set(frame_current)
         pose_bone.matrix = preview_matrix
 
         return{'FINISHED'}
