@@ -4,7 +4,7 @@ bl_info = {
     'author': 'Pavel_Blend',
     'version': (0, 0, 0),
     'blender': (2, 79, 0),
-    'location': '3D View > Toolshelf (in Pose Mode)',
+    'location': '3D View > Toolshelf > Pose Tools Panel',
     'category': 'Animation'
 }
 
